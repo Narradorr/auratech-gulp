@@ -8,6 +8,11 @@
     background-color: #ffffff;
 }
 
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
 .nav-item .nav-link {
     text-transform: uppercase;
     font-style: normal;
@@ -142,7 +147,7 @@
 
 
 .btn.qq-button {
-    font-family: 'Poppins';
+    font-family: 'Poppins', 'Montserrat' !important;
     font-style: normal;
     font-weight: 600;
     font-size: 1em;
@@ -153,18 +158,22 @@
     justify-content: center;
     align-items: center;
     padding: 18px 32px;
-    width: 200px;
-    height: 64px;
-    background: linear-gradient(114.44deg, #7433FF 0%, #FFA3FD 100%);
+    background: #1F52FF;
     border-radius: 40px;
     color: #F7F7FC;
     border: none;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
 .btn.qq-button:hover {
     color: #F7F7FC;
-    background: linear-gradient(114.44deg, #FFA3FD 0%, #7433FF 100%);
+    background: linear-gradient(114.44deg, #7433FF 0%, #FFA3FD 100%);
+}
+
+.btn.qq-button:active {
+    background: linear-gradient(114.44deg, #624AF2 0%, #50DDC3 100%);
+    color: #F7F7FC !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .advantages__section {
@@ -345,11 +354,10 @@
     align-items: center;
     width: 58%;
     justify-content: space-between;
-
     font-style: normal;
     font-weight: 500;
     font-size: 2.5em;
-    line-height: 2.7em;
+    line-height: 2.5em;
     text-transform: uppercase;
     color: #4E4B66;
 
@@ -416,7 +424,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 1.5em;
-    line-height: 2.1em;
+    line-height: 1.5em;
     text-transform: uppercase;
     color: #000000;
     text-align: left;
@@ -510,7 +518,7 @@
     justify-content: center;
 }
 
-.partner__img { 
+.partner__img {
     max-width: 170px;
 }
 
@@ -544,6 +552,7 @@
 }
 
 .copyright {
+    font-family: 'Inter' !important;
     font-style: normal;
     font-weight: 300;
     font-size: 0.875em;
