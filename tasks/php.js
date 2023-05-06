@@ -8,6 +8,6 @@ const bs = require('browser-sync');
 module.exports = function php() {
 	return src('src/**/*.php')
 		.pipe(include())
-		.pipe(dest('doc/'))
+		.pipe(dest('docs/'))
 		.pipe(bs.stream())
 }
